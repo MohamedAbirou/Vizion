@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Akira Expanded';
+    src: url('/fonts/Akira-Expanded-Demo.otf');
+    /* Adjust the font file name and format based on the downloaded font files */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
