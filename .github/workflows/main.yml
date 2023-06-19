@@ -22,7 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./vizion/front-end
+        working-directory: ./front-end
 
       - name: Build Next.js app
         run: npm run build
