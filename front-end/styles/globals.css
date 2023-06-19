@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background-color: #101010;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: #303030;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #505050;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #707070;
+}
+
+.spinner-wrapper {
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+}
+
+.spinner {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 0px auto;
+    -webkit-animation: rotation .5s infinite linear;
+    -moz-animation: rotation .5s infinite linear;
+    -o-animation: rotation .5s infinite linear;
+    animation: rotation .5s infinite linear;
+    border: 6px solid rgba(0, 174, 239, .15);
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+@-moz-keyframes rotation {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+
+    to {
+        -moz-transform: rotate(359deg);
+    }
+}
+
+@-o-keyframes rotation {
+    from {
+        -o-transform: rotate(0deg);
+    }
+
+    to {
+        -o-transform: rotate(359deg);
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
