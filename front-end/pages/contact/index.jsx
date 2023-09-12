@@ -21,14 +21,14 @@ export default function Contact() {
             </p>
             <p>
               We would love to hear from you, feel free to call us from Monday -
-              Friday 9:00am to 5:00pm PST at
+              Friday 9:00am to 5:00pm PST at&nbsp;
               <Link
                 href="https://api.whatsapp.com/send?phone=+212642319683&text=Hello, more information!"
                 className="text-cyan hover:underline"
               >
                 0642319683
               </Link>
-              or email us directly at
+              &nbsp; or email us directly at &nbsp;
               <Link
                 href="mailto:support@vizion.com"
                 className="text-cyan hover:underline"
